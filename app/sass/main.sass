@@ -1,0 +1,247 @@
+$primary-color: #00b0ad
+$black: black
+$white: white
+
+@font-face
+  font-family: 'geometria'
+  src: url('../fonts/Geometria.ttf')
+  src: url('../fonts/Geometria.eot')
+  src: url('../fonts/Geometria.woff')
+
+@font-face 
+	font-family: 'Geometria Bold'
+	src: url('../fonts/Geometria-Bold.ttf')
+	src: url('../fonts/Geometria-Bold.eot')
+	src: url('../fonts/Geometria-Bold.woff')
+// *
+// 	margin: 0
+// 	padding: 0
+// 	// box-sizing: border-box
+// html
+// 	// background: url(/img/bg/test_4.png)
+// 	// background-repeat: repeat
+a
+	color: $primary-color
+	text-decoration: none
+	&:hover
+		text-decoration: underline
+// h1
+// 	font-size: 46px
+
+// h2
+// 	font-size: 32px
+// 	margin-bottom: 30px
+
+// h3
+// 	font-size: 30px
+// 	margin-bottom: 30px
+// h4
+// 	font-weight: bold
+/* a
+	color: $primary-color !important
+	&:hover
+		color: darken($primary-color, 10%) !important */
+
+body
+	background: url(/img/bg/test_4.png)
+	background-repeat: repeat
+	color: #111
+	font-family: Geometria, sans-serif
+	font-size: 16px
+	font-weight: 300
+	-webkit-font-smoothing: antialiased
+	-webkit-overflow-scrolling: touch
+	color: $black
+.green
+	color: $primary-color
+.padding-0
+	padding-right: 0
+	padding-left: 0
+
+header
+	padding-top: 50px
+	h4
+		color: $primary-color
+	.header-logo
+		// display: block
+		// width: 100%
+		// cursor: pointer
+		// background: url(/img/logo.png) no-repeat
+		// background-size: cover
+	nav
+		margin-top: 40px
+		margin-bottom: 30px
+		width: 100%
+		text-align: center
+		ul
+			list-style: none
+			padding: 0
+			// font-size: 15px
+		a
+			text-decoration: none
+			outline: none
+			display: block
+			transition: .2s ease-in-out
+			color: black
+			&:hover
+				text-decoration: none
+
+.topnav
+	>li
+		display: inline-block
+		position: relative
+		border-right: 1px solid $primary-color
+		// margin-right: -4px
+		padding: 0 9px
+		font-size: 16px
+		&:first-child
+			// padding-left: 0px
+		&:last-child
+			border: none
+			// padding-right: 0px
+		&:hover
+			background: $primary-color
+			>a
+				color: $white
+			.subnav
+				// display: block
+				visibility: visible
+				opacity: 1
+				transform: scale(1)
+				transition: .4s ease-in-out
+
+.subnav
+	// margin-top: 20px
+	text-align: center
+	padding: 10px
+	width: 200px
+	margin-left: -100px
+	// display: none
+	visibility: hidden
+	background: $white
+	position: absolute
+	left: 50%
+	right: 50%
+	top: 100%
+	border: 1px solid #ededed
+	opacity: .2
+	transform: scale(.8)
+	z-index: 999
+	>li
+		font-size: 14px
+		border-bottom: 1px solid #ededed
+		line-height: 2em
+		&:last-child
+			border: none
+		&:hover
+			background: $primary-color
+			transition: .4s ease-in-out
+			a
+				color: white
+.main-page_content
+	background: url(/img/mood_animation_0115s_delay_wo_bg_last_1.gif) no-repeat
+	// background: url(/img/mood_illustration_LC_sign.png) no-repeat
+	background-position: 95% 0%
+	background-size: 325px
+	.desc
+		padding-top: 50px
+		font-size: 18px
+/*Downloads*/
+.dwnlds
+	margin-top: 50px
+	.dwnlds-info
+		margin-bottom: 20px
+	.dwnlds-btn
+		background: url(/img/button_downloads.png) no-repeat
+		background-size: cover
+		height: 50px
+		border-radius: 3px
+		text-align: center
+		min-width: 385px
+		&:hover
+			opacity: 0.8
+			transition: 0.3s ease-in-out
+		a
+			color: $white
+			display: block
+			width: 100%
+			height: 100%
+			text-decoration: none
+			padding-top: 6px
+
+.latest-news
+	padding-top: 40px
+	// padding-bottom: 40px
+	h2
+		font-weight: 700
+.latest-news__item-date
+	font-style: italic
+	font-weight: 700
+.latest-news__item-title
+	padding-top: 10px	
+	font-weight: 700
+.latest-news__item-text
+	padding-top: 5px
+
+footer
+	padding-top: 40px
+	padding-bottom: 15px
+	font-size: 13px
+.footer-line
+	height: 1px
+	background-color: $black
+	font-size: 1px
+	margin-bottom: 15px
+.footer__social
+	font-size: 32px
+	a
+		color: grey
+		&:hover
+			color: $primary-color
+			transition: 0.3s ease-in-out
+
+.descriptor
+	padding-bottom: 10px
+	border-bottom: 1px solid $primary-color
+	font-weight: bold
+	margin-bottom: 30px
+
+
+.team__item
+	text-align: center
+	margin-bottom: 50px
+
+.team__item-name
+	font-size: 18px
+	font-weight: bold
+	margin-bottom: 10px
+
+.round
+	box-sizing: border-box
+	border-radius: 50%
+	// height: 245px
+	// width: 245px
+	border: 5px solid $primary-color
+	margin-bottom: 30px
+	img
+		width: 100%	
+		height: 100%
+
+
+
+/* Media queries */
+@media screen and (max-width: 992px)
+	.main-page_content
+		width: 100%
+		background: none
+	.header-logo
+		display: block
+		text-align: center
+	.dwnlds-btn
+		margin-bottom: 20px
+	.illustration-right
+		display: none
+
+@media screen and (max-width: 576px)
+		.topnav
+			flex-direction: column

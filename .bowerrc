@@ -1,0 +1,4 @@
+{
+	"directory": "app/libs/",
+	"proxy": "http://10.50.50.12:8181"
+}

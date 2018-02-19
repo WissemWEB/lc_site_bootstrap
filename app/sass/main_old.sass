@@ -1,0 +1,409 @@
+$primary-color: #00b0ad
+// $primary-color: #1da79c
+$black: black
+$white: white
+
+@font-face
+  font-family: 'geometria'
+  src: url('../fonts/Geometria.ttf')
+  src: url('../fonts/Geometria.eot')
+  src: url('../fonts/Geometria.woff')
+
+@font-face 
+	font-family: 'Geometria Bold'
+	src: url('../fonts/Geometria-Bold.ttf')
+	src: url('../fonts/Geometria-Bold.eot')
+	src: url('../fonts/Geometria-Bold.woff')
+
+*
+	margin: 0
+	padding: 0
+	// box-sizing: border-box
+html
+	// background: url(/img/bg/test_4.png)
+	// background-repeat: repeat
+a
+	color: $primary-color
+	text-decoration: none
+h1
+	font-size: 46px
+
+h2
+	font-size: 32px
+	margin-bottom: 30px
+
+h3
+	font-size: 30px
+	margin-bottom: 30px
+h4
+	font-weight: bold
+
+
+body
+	background: url(/img/bg/test_4.png)
+	background-repeat: repeat
+	color: #111
+	font-family: Geometria, sans-serif
+	font-size: 16px
+	font-weight: 300
+	-webkit-font-smoothing: antialiased
+	-webkit-overflow-scrolling: touch
+	color: $black
+.green
+	color: $primary-color
+.container
+	// width: 1024px
+	// max-width: 1170px;
+	width: 1170px
+	// width: 100%
+	margin: 0 auto
+	padding: 0 15px
+	box-sizing: border-box
+
+.clearfix
+	clear: both
+
+#header
+	h2
+		margin-bottom: 0
+	// padding-top: 50px
+	// margin: 50px 0
+	.header-logo
+		float: left
+		min-width: 250px
+		height: 50px
+		// margin-right: 250px
+		background-color: $primary-color
+		background: url("../img/logo.png") no-repeat
+		background-size: contain
+	.partners
+		float: left
+		// min-width: 400px
+		.logo1, .logo2
+			background-color: $primary-color
+			height: 40px
+			float: left
+			// display: inline-block
+			// margin-right: 40px
+			min-width: 150px
+			&:hover
+				// opacity: .7
+				transform: scale(1.1)
+				transition: .3s ease-in-out
+			a
+				display: block
+				width: 100%
+				height: 100%
+		.logo1
+			background: url("../img/key_preclinicals.png") no-repeat
+			background-size: contain
+		.logo2
+			background: url("../img/spectrum_info.png") no-repeat
+			background-size: contain
+
+	.tagline
+		float: left
+		margin-left: 450px
+		color: $primary-color
+		font-weight: bold
+		h2
+			font-size: 24px
+
+
+				
+
+.header-wrapper
+	margin: 50px auto 30px
+
+nav
+	margin-top: 40px
+	width: 100%
+	text-align: center
+	ul
+		list-style: none
+		padding: 0
+		// font-size: 15px
+	a
+		text-decoration: none
+		outline: none
+		display: block
+		transition: .2s ease-in-out
+		color: $black
+
+.topnav
+	// text-align: center
+	// width: 100%
+	// margin-bottom: 10px
+	>li
+		// text-transform: uppercase
+		display: inline-block
+		position: relative
+		border-right: 1px solid $primary-color
+		margin-right: -4px
+		padding: 0 10px
+		font-size: 16px
+		&:first-child
+			padding-left: 0px
+		&:last-child
+			border: none
+			padding-right: 0px
+		&:hover
+			background: $primary-color
+			>a
+				color: $white
+			.subnav
+				// display: block
+				visibility: visible
+				opacity: 1
+				transform: scale(1)
+				transition: .4s ease-in-out
+				// transform: scale(1)
+
+.subnav
+	// margin-top: 20px
+	text-align: center
+	padding: 10px
+	width: 200px
+	margin-left: -100px
+	// display: none
+	visibility: hidden
+	background: $white
+	position: absolute
+	left: 50%
+	right: 50%
+	top: 100%
+	border: 1px solid #ededed
+	opacity: .2
+	transform: scale(.8)
+	>li
+		font-size: 14px
+		border-bottom: 1px solid #ededed
+		line-height: 2em
+		&:last-child
+			border: none
+		&:hover
+			background: $primary-color
+			transition: .4s ease-in-out
+			a
+				color: white
+
+// Main page content
+.main-page_content
+	background: url(/img/mood_animation_0115s_delay_wo_bg_last_1.gif) no-repeat
+	// background: url(/img/mood_illustration_LC_sign.png) no-repeat
+	background-position: 90% 0%
+	background-size: 28%
+	h2
+		margin-top: 50px
+		// margin 50px 0
+		// margin: 0px 10px
+		width: 70%
+	.desc
+		margin: 50px 0 50px
+		width: 700px
+		font-size: 18px
+
+.dwnlds
+	margin-bottom: 50px
+	margin-top: 50px
+	overflow: hidden
+	.dwnlds-info
+		width: 550px
+		float: none
+		font-size: 16px
+		margin-bottom: 30px
+	.dwnlds-btn
+		float: left
+		width: 555px
+		height: 50px
+		font-size: 26px
+		margin-right: 30px
+		background: url(/img/button_downloads.png)
+		background-size: cover
+		background-color: $primary-color
+		text-align: center
+		font-weight: bold
+		border-radius: 3px
+		&:last-child
+			margin-right: 0
+		a
+			display: block
+			color: white
+			width: 100%
+			height: 100%
+			text-decoration: none
+			padding-top: 6px
+		&:hover
+			// background-color: darken($primary-color, 5%)
+			// transform: scale(0.95)
+			opacity: 0.8
+			transition: 0.3s ease-in-out
+
+
+/* Latest News */
+
+.latest-news
+	h3
+		font-weight: bold
+		margin-top: 40px
+		margin-bottom: 25px
+	.latest-news-item
+		display: inline-block
+		width: 263px
+		margin-left: 30px
+		margin-right: -4px
+		// margin-right: -4px
+		&:first-child
+			margin-left: 0px
+		.latest-news-item-date
+			margin-bottom: 10px
+			font-style: italic
+			font-weight: bold
+		.latest-news-item-title
+				font-weight: bold
+				margin-bottom: 5px
+		.latest-news-item-text
+				font-size: 14px
+
+	.latest-news-wrapper
+		.latest-news-btn
+			margin: 40px auto
+			height: 50px
+			width: 275px
+			background-color: $primary-color
+			background: url(/img/button_downloads.png)
+			border-radius: 3px
+			a
+				display: block
+				width: 100%
+				height: 100%
+				text-decoration: none
+				color: $white
+				text-align: center
+				font-weight: bold
+				font-size: 20px
+				padding-top: 10px
+			&:hover
+				// background-color: darken($primary-color, 5%)
+				opacity: 0.8
+				transition: 0.3s ease-in-out
+
+/* Footer */
+#footer
+	font-size: 13px
+	margin-bottom: 20px
+.footer-line
+	width: 100%
+	height: 1px
+	background-color: $black
+	margin-bottom: 20px
+.footer1, .footer2, .footer3, .footer4
+	display: inline-block
+	margin-left: 30px
+	margin-right: -4px
+
+.footer1, .footer2
+	width: 263px
+.footer3
+	width: 364px
+.footer4
+	width: 165px
+	text-align: right
+	font-size: 32px
+	color: grey
+	.fa:hover
+		color: $primary-color
+		transition: .3s ease-in-out
+		cursor: pointer
+
+.footer-wrapper
+	>div:first-child
+		margin-left: 0
+
+
+#content
+	.content
+		overflow: hidden
+	p
+		margin-bottom: 30px
+	h4
+		margin-bottom: 10px
+	ul
+		list-style: none
+	li
+		padding-left: 1em 
+  	text-indent: -.7em
+  &:before
+  	content: "• "
+  	color: $primary-color
+
+	.descriptor
+		padding-bottom: 10px
+		border-bottom: 1px solid $primary-color
+	.text-left
+		width: 848px
+		float: left
+	.illustration-right
+		float: left
+		width: 263px
+		min-height: 550px
+		// height: 100%
+		background-color: blue
+		background: url(/img/mood_image_1.png)
+		background-size: cover
+	.col-2, .col-3
+		float: left
+		margin-right: 30px
+		// background-color: $primary-color
+		&:last-child
+			margin-right: 0
+	.col-2
+		width: 555px
+	.col-3
+		width: 360px
+	.contacts
+		background: url(/img/mood_illustration_LC_sign.png) no-repeat
+		background-size: 360px
+		background-position: top 40px right 0
+	.team-item
+		width: 245px
+		height: 400px	
+		text-align: center
+		float: left
+		margin-right: 30px
+		.round
+			box-sizing: border-box
+			border-radius: 50%
+			height: 245px
+			width: 245px
+			// background: url(/img/team/vfetiukhin.png) no-repeat
+			// background-size: contain
+			border: 5px solid $primary-color
+			margin-bottom: 30px
+			img
+				width: 100%	
+				height: 100%
+		.name
+			font-size: large
+			font-weight: bold
+			margin-bottom: 15px
+		// .position
+		// 	font-size: regular
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
