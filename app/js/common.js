@@ -1,4 +1,15 @@
 $(function() {
+	
+	new WOW().init();
+	
+	$(document).ready(function(){
+    $("#lib-nav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 700);
+    });
+	});
 
 	$(document).ready(function(e){
 		   var left = 0,
@@ -14,7 +25,9 @@ $(function() {
 		    });
 		});
 
-		new WOW().init();
+
+
+		
 		// alert('OK');
 	// $('.sub-nav ul').hide();
 	// $('.sub-nav>a').hover(

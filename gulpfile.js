@@ -77,7 +77,9 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 	var buildCss = gulp.src([
 		'app/css/main.css',
 		'app/css/libs.min.css',
-		'app/css/font-awesome.min.css'
+		'app/css/font-awesome.min.css',
+		'app/css/bootstrap.css',
+		'app/css/animate.css'
 	])
 	.pipe(gulp.dest('dist/css'));
 
